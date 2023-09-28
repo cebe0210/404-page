@@ -1,44 +1,156 @@
-body {
-    background-color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+@media screen and (max-width: 299px) {
+    body {    
+        background: -webkit-linear-gradient(37deg, rgb(65, 62, 63), rgb(167, 159, 164));
+        background: linear-gradient(37deg, rgb(65, 62, 63), rgb(167, 159, 164));
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(5, auto);
+    }
+    .grid img {
+        grid-column: 4/5;
+        grid-row: 3 / 4;
+        width: 100px;
+        height: auto;
+        object-fit: scale-down;
+    }
+    h1 {
+        font-size: 48px;
+        grid-column: 1/6;
+        grid-row: 2;
+        text-align: center;
+    }
+    h2 {
+        font-size: 32px;
+        grid-column: 2 / 3 ;
+        grid-row: 3/4;
+    }
+    #bouton {
+        width: 75px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: brown;
+        color: black;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        line-height: 30px;
+        grid-column: 3;
+        grid-row: 5;
+        justify-self: center;
+    }
+    #bouton :hover {
+        background-color: rgb(247, 62, 62);   
+    }
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
+
+
+@media screen and (min-width: 300px) and (max-width: 769px) {
+    body {    
+        background: -webkit-linear-gradient(37deg, rgb(65, 62, 63), rgb(167, 159, 164));
+        background: linear-gradient(37deg, rgb(65, 62, 63), rgb(167, 159, 164));
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(5, 20%);
+    }
+    .grid img {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        width: 250px;
+        height: auto;
+    }
+    h1 {
+        font-size: 78px;
+        grid-column: 2;
+        grid-row: 1;
+        font-weight: bold;
+        
+    }
+    h2 {
+        font-size: 56px;
+        grid-column: 1 / 3 ;
+        grid-row: 2;
+        margin-left: 25px;
+        text-align: center;
+    }
+    #bouton {
+        width: 100px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: brown;
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        line-height: 40px;
+        grid-column: 3;
+        grid-row: 5;
+        justify-self: center;
+    }
+    #bouton :hover {
+        background-color: rgb(247, 62, 62);   
+    }
 }
-.grid img {
-    grid-column: 4;
-    grid-row: 2 / 3;
-}
-h1 {
-    font-size: 72px;
-    grid-column: 2;
-    grid-row: 2;
-}
-h2 {
-    font-size: 72px;
-    grid-column: 2 / 3 ;
-    grid-row: 3;
-}
-#bouton {
-    width: 100px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: brown;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    line-height: 40px;
-    grid-column: 3;
-    grid-row: 5;
-}
-#bouton :hover {
-    background-color: gray;
-    opacity: 50%;
-    
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    body {    
+        background: -webkit-linear-gradient(37deg, rgb(65, 62, 63), rgb(167, 159, 164));
+        background: linear-gradient(37deg, rgb(65, 62, 63), rgb(167, 159, 164));
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(5, 20%);
+    }
+    .grid img {
+        grid-column: 4;
+        grid-row: 2 / 3;
+    }
+    h1 {
+        font-size: 98px;
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+    }
+    h2 {
+        font-size: 72px;
+        grid-column: 2 / 3 ;
+        grid-row: 3;
+    }
+    #bouton {
+        width: 100px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: brown;
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        line-height: 40px;
+        grid-column: 3;
+        grid-row: 5;
+        justify-self: center;
+    }
+    #bouton :hover {
+        background-color: rgb(247, 62, 62);   
+    }
 }
